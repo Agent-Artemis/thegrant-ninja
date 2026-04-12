@@ -146,7 +146,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className="block text-center border border-amber-500/50 hover:bg-amber-500 hover:text-black text-amber-400 font-bold py-4 rounded-xl transition-colors">
+              <a href="https://buy.stripe.com/dRmdRadurc33a8A4gW6kg02" target="_blank" rel="noopener noreferrer" className="block text-center border border-amber-500/50 hover:bg-amber-500 hover:text-black text-amber-400 font-bold py-4 rounded-xl transition-colors">
                 Get Started — $2,497
               </a>
             </div>
@@ -175,7 +175,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className="block text-center bg-amber-500 hover:bg-amber-400 text-black font-bold py-4 rounded-xl transition-colors shadow-lg shadow-amber-500/20">
+              <a href="https://buy.stripe.com/4gMbJ22PN3wxcgIcNs6kg03" target="_blank" rel="noopener noreferrer" className="block text-center bg-amber-500 hover:bg-amber-400 text-black font-bold py-4 rounded-xl transition-colors shadow-lg shadow-amber-500/20">
                 Get Started — $997 + 8.5%
               </a>
             </div>
