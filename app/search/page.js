@@ -102,7 +102,7 @@ export default function SearchPage() {
               </div>
 
               {/* Source Breakdown */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
                 {Object.entries(results.bySource || {}).map(([source, count]) => (
                   <div key={source} className="bg-white/5 border border-white/10 rounded-xl p-4">
                     <div className="text-3xl font-black text-amber-400">{count}</div>
