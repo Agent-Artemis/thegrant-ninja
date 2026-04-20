@@ -43,7 +43,7 @@ export default function Home() {
       <nav className="border-b border-white/10 px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-2xl">⚔️</span>
+            <span className="text-2xl bg-white rounded-full w-10 h-10 flex items-center justify-center">🥷</span>
             <span className="text-xl font-bold tracking-tight">TheGrant<span className="text-amber-400">.Ninja</span></span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm text-white/70">
@@ -59,7 +59,7 @@ export default function Home() {
       <section className="px-6 py-24 md:py-36 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-sm font-medium px-4 py-2 rounded-full mb-8">
-            <span>⚔️</span> Expert Grant Writers. Real Results.
+            <span>🥷</span> Expert Grant Writers. Real Results.
           </div>
           <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight">
             We Write The Grant.<br />
@@ -245,7 +245,7 @@ export default function Home() {
           <p className="text-white/50 text-center mb-12 text-lg">Tell us about your grant. We&apos;ll follow up within 24 hours.</p>
           {formSubmitted ? (
             <div className="text-center bg-amber-500/10 border border-amber-500/30 rounded-2xl p-12">
-              <div className="text-5xl mb-4">⚔️</div>
+              <div className="text-5xl mb-4">🥷</div>
               <h3 className="text-2xl font-bold mb-3 text-amber-400">We&apos;re On It.</h3>
               <p className="text-white/60">We&apos;ll contact you within 24 hours to discuss your grant application and get started.</p>
             </div>
@@ -322,7 +322,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex items-center gap-2">
-              <span className="text-2xl">⚔️</span>
+              <span className="text-2xl bg-white rounded-full w-10 h-10 flex items-center justify-center">🥷</span>
               <span className="text-xl font-bold">TheGrant<span className="text-amber-400">.Ninja</span></span>
             </div>
             <div className="flex items-center gap-8 text-sm text-white/50">

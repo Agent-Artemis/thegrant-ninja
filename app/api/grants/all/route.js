@@ -12,9 +12,9 @@ export async function GET(request) {
 
   try {
     // Fetch from all sources in parallel
-    const baseUrl = process.env.VERCEL_URL 
-      ? `https://${process.env.VERCEL_URL}` 
-      : 'http://localhost:3000'
+    // Use request URL to build absolute URLs for internal API calls
+    const { protocol, host } = new URL(request.url)
+    const baseUrl = `${protocol}//${host}`
 
     const [
       grantsGov, 

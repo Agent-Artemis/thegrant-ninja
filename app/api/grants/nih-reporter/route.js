@@ -26,7 +26,7 @@ export async function GET(request) {
           fiscal_years: [new Date().getFullYear(), new Date().getFullYear() + 1]
         },
         offset: 0,
-        limit: 25,
+        limit: 100,
         sort_field: "project_start_date",
         sort_order: "desc"
       })

@@ -36,7 +36,7 @@ export async function GET(request) {
     
     const opportunities = (data.results || []).map(award => ({
       id: award.internal_id || award.generated_internal_id,
-      title: award.Award Description || award.description || 'Federal Grant Award',
+      title: award['Award Description'] || award.description || 'Federal Grant Award',
       agency: award['Awarding Agency'] || award.awarding_agency_name,
       recipient: award['Recipient Name'] || award.recipient_name,
       amount: award['Award Amount'] || award.total_obligation,

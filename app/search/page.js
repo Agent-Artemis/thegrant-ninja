@@ -41,7 +41,7 @@ export default function SearchPage() {
       <nav className="border-b border-white/10 px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl">⚔️</span>
+            <span className="text-2xl bg-white rounded-full w-10 h-10 flex items-center justify-center">🥷</span>
             <span className="text-xl font-bold tracking-tight">TheGrant<span className="text-amber-400">.Ninja</span></span>
           </Link>
           <Link href="/#contact" className="bg-amber-500 hover:bg-amber-400 text-black font-semibold px-4 py-2 rounded-lg transition-colors text-sm">
@@ -53,7 +53,7 @@ export default function SearchPage() {
       {/* Search Section */}
       <section className="px-6 py-12">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-black mb-4">Search Grants & RFPs</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4">Search Grants</h1>
           <p className="text-white/60 mb-8 text-lg">Search across federal grant databases in real-time</p>
 
           {/* Search Bar */}
@@ -101,19 +101,7 @@ export default function SearchPage() {
                 </h2>
               </div>
 
-              {/* Source Breakdown */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
-                {Object.entries(results.bySource || {}).map(([source, count]) => (
-                  <div key={source} className="bg-white/5 border border-white/10 rounded-xl p-4">
-                    <div className="text-3xl font-black text-amber-400">{count}</div>
-                    <div className="text-white/50 text-sm mt-1">{source}</div>
-                  </div>
-                ))}
-                <div className="bg-amber-500/10 border border-amber-500/30 rounded-xl p-4">
-                  <div className="text-3xl font-black text-amber-400">{results.total}</div>
-                  <div className="text-amber-400/70 text-sm mt-1 font-semibold">Total Found</div>
-                </div>
-              </div>
+              {/* Source Breakdown - Hidden */}
 
               {/* Results List */}
               {results.opportunities.length > 0 ? (
@@ -123,11 +111,8 @@ export default function SearchPage() {
                       <div className="flex items-start justify-between gap-4 mb-3">
                         <div className="flex-1">
                           <div className="flex items-center gap-3 mb-2">
-                            <span className="text-xs font-semibold text-amber-400 bg-amber-500/10 px-2 py-1 rounded">
-                              {opp.source}
-                            </span>
                             {opp.agency && (
-                              <span className="text-xs text-white/40">{opp.agency}</span>
+                              <span className="text-xs text-white/60">{opp.agency}</span>
                             )}
                           </div>
                           <h3 className="text-xl font-bold text-white/90 mb-2">{opp.title}</h3>
@@ -144,12 +129,10 @@ export default function SearchPage() {
                           </div>
                         </div>
                         <a
-                          href={opp.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          href="/#contact"
                           className="flex-shrink-0 bg-amber-500/20 hover:bg-amber-500 text-amber-400 hover:text-black font-semibold px-4 py-2 rounded-lg transition-colors text-sm"
                         >
-                          View →
+                          Apply →
                         </a>
                       </div>
                     </div>
